@@ -14,22 +14,19 @@ window.onscroll = function(){
 
 //* efecto maquina de escribir
 
-const text = document.querySelector(".sec-text");
+const text = document.querySelector(".strong_div3");
 
 const textLoad = () => {
     setTimeout(() => {
-        text.textContent = "Alexander";
+        text.textContent = "React";
     }, 0);
     setTimeout(() => {
-        text.textContent = "Wilfredo";
-    }, 4000);
-    setTimeout(() => {
-        text.textContent = "Munive";
-    }, 8000); //1s = 1000 milliseconds
+        text.textContent = "Node.js";
+    }, 4000);//1s = 1000 milliseconds
 }
 
 textLoad();
-setInterval(textLoad, 12000);
+setInterval(textLoad, 8000);
 
 //* loader page
 
