@@ -8,20 +8,27 @@
   <title>Portafolio Web-Programador Junior</title>
   <link rel="stylesheet" href="css/estilos.css">
   <script src="https://kit.fontawesome.com/1fcfc0e006.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+
 
 </head>
 
 <body>
+  <div class="loader_container" id="loader_container" >
+    <img class="img_loader" src="./img/gif_loader.gif" alt="">
+    <span class="loader"></span>
+  </div>
 
   <header id="header">
     <div class="container__header">
+      <div class="logo">
+        <img class="logo_img" src="/img/munive_logo.png" alt="">
+      </div>
       <nav id="navBar" class="hero__nav">
         <div class="hero__nav__contenedor">
-          <div class="logo">
-            <img class="logo_img" src="/img/munive_logo.png" alt="">
-          </div>
           <div id="heroMenu" class="hero__nav-inner">
-            <a class="hero__nav-link" href="#">HOME</a>
+            <a class="hero__nav-link home-style" href="#">HOME</a>
             <a class="hero__nav-link" href="#about">ABOUT</a>
             <a class="hero__nav-link" href="#resume">RESUME</a>
             <a class="hero__nav-link" href="#skill">SKILL</a>
@@ -29,7 +36,7 @@
             <a class="hero__nav-link" href="#projects">PROJECTS</a>
             <a class="hero__nav-link" href="#contact">CONTACT</a>
           </div>
-          <button id="btnMenu" class="btn-abrir">abrir</button>
+          <button id="btnMenu" class="btn-abrir"><i class="fa-solid fa-bars"></i></button>
         </div>
       </nav>
     </div>
@@ -46,42 +53,47 @@
 
       <div class="container__cover">
         <div class="container__info">
-          <h1 class="container__info_h1">Hello, my name is <h2>Alexander</h2>
-          </h1>
+          <div class="container_name">
+            <h1 class="container__info_h1 ">Hello, my name is <strong class="strong_h2 sec-text">Freelancer</strong></h1>        
+          </div>
           <div class="text">I am a Full-Stack Web programmer with experience in React and Node.js</div>
           <div class="iconos">
             <div class="fila">
               <div class="casilla">
                 <a href="https://www.facebook.com/profile.php?id=100009497037080" target="_blank"><i
                     class="fa-brands fa-square-facebook"></i></a>
-                <!-- <span>Faccebook</span> -->
+                
               </div>
               <div class="casilla">
                 <a href="https://www.instagram.com/alexmunive_13/" target="_blank"><i
                     class="fa-brands fa-square-instagram"></i></a>
-                <!-- <span>Instagram</span> -->
+               
               </div>
               <div class="casilla">
                 <a href="https://api.whatsapp.com/send?phone=936658544&text=Good how can I help you?" target="_blank"><i
                     class="fa-brands fa-square-whatsapp"></i></a>
-                <!-- <span>Whatsapp</span> -->
+                
               </div>
               <div class="casilla">
                 <a href="https://www.linkedin.com/in/alexander-munive/" target="_blank"><i
                     class="fa-brands fa-linkedin"></i></a>
-                <!-- <span>Linkedin</span> -->
+               
               </div>
               <div class="casilla">
                 <a href="https://github.com/AlexMunive?tab=repositories" target="_blank"><i
                     class="fa-brands fa-square-github"></i></a>
-                <!-- <span>Github</span> -->
+    
               </div>
             </div>
           </div>
         </div>
-        <div class="container__vector">
-          <img class="img_alex" src="img/alex--oficial.png" alt="">
+          <div class="container__vector">
+            <img class="img_alex" src="img/alex--oficial.png" alt="">
+          </div>
         </div>
+        <!-- <div class="container__vector">
+          <img class="img_alex" src="img/alex--oficial.png" alt="">
+        </div> -->
       </div>
       <section class="contenedor-fondo-animado">
         <div class="animacion">
@@ -106,12 +118,25 @@
 
     <main id="main">
 
-
-
       <!-- ======= About Section ======= -->
       <section id="about" class="about">
         <div class="about_container">
           <div class="about_modify">
+            <div class="about_description">
+              <h2 class="about_name">ABOUT ME</h2>
+              <h3 class="about_name_h3">PROGRAMMER JUNIOT FRONTEND</h3>
+              <p class="about_description_p">My name is Alexander Wilfredo Munive Choque, I am of Peruvian nationality,
+                since I was little I liked
+                animations, video games, strategies. I grew up with great values ​​that have made me stand out in
+                sports, math and poetry contests. Two years ago I finished the University, I am a graduate of the
+                Industrial Engineering career. I am currently a Full-Stack Web Programming student at Academlo. One of
+                my goals is to become a "Senior". I am a very skilled person and eager to break barriers.</p>
+              <div class="btn_cv_div">
+                <a class="btn_cv" href="https://drive.google.com/file/d/1v1CebXBRDG52ifxTF_h_Kv_9etIoOsvB/view"
+                  target="_blank">Download CV</a>
+              </div>
+  
+            </div>
 
             <div class="modificación_dos">
               <div class="texto1">
@@ -139,21 +164,7 @@
               <h4 class="about_Date_detail">Peruvian</h4>
             </div>
           </div>
-          <div class="about_description">
-            <h2 class="about_name">ABOUT ME</h2>
-            <h3 class="about_name_h3">PROGRAMMER JUNIOT FRONTEND</h3>
-            <p class="about_description_p">My name is Alexander Wilfredo Munive Choque, I am of Peruvian nationality,
-              since I was little I liked
-              animations, video games, strategies. I grew up with great values ​​that have made me stand out in
-              sports, math and poetry contests. Two years ago I finished the University, I am a graduate of the
-              Industrial Engineering career. I am currently a Full-Stack Web Programming student at Academlo. One of
-              my goals is to become a "Senior". I am a very skilled person and eager to break barriers.</p>
-            <div class="btn_cv_div">
-              <a class="btn_cv" href="https://drive.google.com/file/d/1v1CebXBRDG52ifxTF_h_Kv_9etIoOsvB/view"
-                target="_blank">Download CV</a>
-            </div>
 
-          </div>
 
         </div>
       </section><!-- End About Section -->
@@ -288,8 +299,10 @@
         </div>
       </section><!-- End Resume Section -->
 
-      <!-- ======= Skill Section ======= -->
 
+
+
+      <!-- ======= Skill Section ======= -->
       <section class="skill" id="skill">
         <div class="skill_container">
           <div>
@@ -431,6 +444,9 @@
       <!-- End Services Section -->
 
 
+
+
+
       <!-- ======= Portafolio Section ======= -->
       <section id="projects" class="projects">
         <div class="projects_container">
@@ -468,7 +484,7 @@
                         </div>
                         <div>
                           <h2>Details</h2>
-                          <div class="iconos">
+                          <div class="iconos_project">
                             <a href="https://github.com/AlexMunive/EntregableN01_Oficial" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
                             <a href="https://clinquant-babka-9da57d.netlify.app/" target="_blank"><i
@@ -495,7 +511,7 @@
                         </div>
                         <div>
                           <h2>Details</h2>
-                          <div class="iconos">
+                          <div class="iconos_project">
                             <a href="https://github.com/AlexMunive/Entregable_N-2" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
                             <a href="https://fanciful-lamington-67d58c.netlify.app/" target="_blank"><i
@@ -522,7 +538,7 @@
                         </div>
                         <div>
                           <h2>Details</h2>
-                          <div class="iconos">
+                          <div class="iconos_project">
                             <a href="https://github.com/AlexMunive/EntregableN3_Oficial" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
                             <a href="https://chipper-stroopwafel-9cccf4.netlify.app/" target="_blank"><i
@@ -548,7 +564,7 @@
                         </div>
                         <div>
                           <h2>Details</h2>
-                          <div class="iconos">
+                          <div class="iconos_project">
                             <a href="https://github.com/AlexMunive/EntregableN4_Oficial" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
                             <a href="https://charming-florentine-28c008.netlify.app/" target="_blank"><i
@@ -574,7 +590,7 @@
                         </div>
                         <div>
                           <h2>Details</h2>
-                          <div class="iconos">
+                          <div class="iconos_project">
                             <a href="https://github.com/AlexMunive/entregable5_oficial" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
                             <a href="https://visionary-narwhal-72a751.netlify.app/" target="_blank"><i
@@ -601,7 +617,7 @@
                         </div>
                         <div>
                           <h2>Details</h2>
-                          <div class="iconos">
+                          <div class="iconos_project">
                             <a href="https://github.com/AlexMunive/Proyecto_Final_React" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
                             <a href="https://cute-brioche-582631.netlify.app/" target="_blank"><i
@@ -662,6 +678,7 @@
 
 
 
+      
       <!-- ======= contact Section ======= -->
       <section id="contact" class="contact">
         <div class="contact_container">
@@ -748,13 +765,20 @@
 
       </section>
       <!-- End contact Section -->
-
-
-    </main>
+    </main> 
+ 
   </div>
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="/js/script.js"></script>
+
+  <script type="text/javascript">
+    window.onload= function(){
+   $('#loader_container').delay(3000).fadeOut();
+   $('body').removeClass('hidden');
+  }
+   </script>
+
 </body>
 
 </html>
