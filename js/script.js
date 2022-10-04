@@ -28,71 +28,14 @@ const textLoad = () => {
 textLoad();
 setInterval(textLoad, 8000);
 
-//* loader page
-
-// window.addEventListener('load', function(){
-//   this.document.getElementById('loader').classList.toggle('loader2')
-// })
-
-// window.onload= function(){
-//   alert('he cargado completamente la página')
-//   $('#loader_container').fadeOut();
-//   $('body').removeClass('hidden')
-// }
-
-// window.addEventListener('load',()=>{
-//   const contenedor_loader = document.querySelector('.loader_container')
-//   contenedor_loader.style.opacity = 0
-//   contenedor_loader.style.visibility = 'hidden'
-  
-
-// })
-
-// $(window).load(function(){
-//   $("#loader_container").delay(2000).fadeOut("slow")
-// })
 
 
-// window.onload = function(){          
-//     $("#loader").fadeOut(2000); 
-// }    
-
-// var $loader = $("#loader");  //referenciamos el div #loader  
-// $loader.gSpinner();   //iniciamos la carga    
-
-// window.onload = function(){                                               
-// setTimeout(function(){
-//     $("#loader_container").fadeOut();
-//     $loader.gSpinner("hide")            
-// },3000);                                      
-// };
+//* sección portafolio modal
 
 
 
-// document.getElementById("btn_menu").addEventListener("click", mostrar_menu);
 
-//     menu = document.getElementById("header");
-//     body = document.getElementById("container__all");
-//     nav = document.getElementById("nav");
-
-// function mostrar_menu(){
-
-//     body.classList.toggle('move_content');
-//     menu.classList.toggle('move_content');
-//     nav.classList.toggle('move_nav');
-// }
-
-// window.addEventListener("resize", function(){
-
-//     if (window.innerWidth > 760)  {
-//         body.classList.remove('move_content');
-//         menu.classList.remove('move_content');
-//         nav.classList.remove('move_nav');
-//     }
-
-// });
-
-
+//* sección header
 
 
 const navBar = document.getElementById('navBar')
