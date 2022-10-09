@@ -127,7 +127,7 @@
         <div class="about_modify">
           <div class="about_description">
             <h2 class="about_name">ABOUT ME</h2>
-            <h3 class="about_name_h3">PROGRAMMER JUNIOT FRONTEND</h3>
+            <h3 class="about_name_h3">PROGRAMMER JUNIOR FRONTEND</h3>
             <p class="about_description_p">My name is Alexander Wilfredo Munive Choque, I am of Peruvian nationality,
               since I was little I liked
               animations, video games, strategies. I grew up with great values ​​that have made me stand out in
@@ -429,49 +429,318 @@
 
       </div>
     </section><!-- End Services Section -->
+    
 
     <!-- ======= Portafolio Section ======= -->
     <section id="projects" class="projects">
 
-      <h1>PROJECT</h1>
+      <h1 class="project_name">PROJECT</h1>
+      <div >
+        <div class="project_section_global">
+          <button class="btn_project active_project" onclick="filterSelection('all')">All</button>
+          <button class="btn_project" onclick="filterSelection('frontend')">FRONTEND</button>
+          <button class="btn_project" onclick="filterSelection('backend')">BACKEND</button>
+        </div>
+      </div>
+
+      <div class="projecto_personal">     
+        <div class="figure_project1 filterDiv frontend" id="projecto1_open"></div>
+        <div class="figure_project2 filterDiv frontend" id="projecto2_open"></div>
+        <div class="figure_project3 filterDiv frontend" id="projecto3_open"></div>
+        <div class="figure_project4 filterDiv frontend" id="projecto4_open"></div>
+        <div class="figure_project5 filterDiv frontend" id="projecto5_open"></div>
+        <div class="figure_project6 filterDiv frontend" id="projecto6_open"></div>
+      </div>
+
+
+
+                           <!-- ======= modal projecto 1 ======= -->
+        
+        <div id="modal_container" class="modal-container">
+          <div class="modal">   
+            <div>
+              <img class="img_project" src="/img/proyecto_1.png" alt="">
+            </div>  
+            <div class="modal_container_hijo_2">
+              <button class="btn_x" id="projecto1_close"><i class="fa-solid fa-xmark"></i></button>
+              <h1 class="project_h1">Project "Phrases"</h1>
+              <ul class="project_ul">
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Application built with React -Vitejs</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Component usage and useState</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>File json</li>
+              </ul>
+              <h2 class="project_h2">Used technology</h2>
+              <div>
+                <img class="img_react" src="/img/react.png" alt="react.png">
+                <img class="img_css" src="/img/icon-css.png" alt="css.png">
+                <img class="img_js" src="/img/icon-js.png" alt="js.png">
+              </div>
+              <h2 class="project_h2">Details</h2>
+              <div class="iconos_project">
+                <a href="https://github.com/AlexMunive/EntregableN01_Oficial" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+                <a href="https://clinquant-babka-9da57d.netlify.app/" target="_blank"><i
+                    class="fa-solid fa-circle-info"></i></a>
+              </div>              
+            </div>       
+          </div>
+        </div>
+                           <!-- ======= modal projecto 2 ======= -->
+        
+        <div id="modal_containerB" class="modal-containerB">
+          <div class="modalB">   
+            <div>
+              <img class="img_project" src="/img/proyecto_2.png" alt="">
+            </div>  
+            <div class="modal_container_hijo_2">
+              <div class="btn_x" id="projecto2_close"><i class="fa-solid fa-xmark"></i></div>
+              <h1 class="project_h1">Project "Climate"</h1>
+              <ul class="project_ul">
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Application built with React -Vitejs</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Use of useState and useEffect</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>API openweathermap use </li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Components related to the project</li>
+              </ul>
+              <h2 class="project_h2">Used technology</h2>
+              <div>
+                <img class="img_react" src="/img/react.png" alt="react.png">
+                <img class="img_css" src="/img/icon-css.png" alt="css.png">
+              </div>
+              <h2 class="project_h2">Details</h2>
+              <div class="iconos_project">
+                <a href="https://github.com/AlexMunive/Entregable_N-2" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+                <a href="https://fanciful-lamington-67d58c.netlify.app/" target="_blank"><i
+                    class="fa-solid fa-circle-info"></i></a>
+              </div>              
+            </div>       
+          </div>
+        </div>
+                           <!-- ======= modal projecto 3 ======= -->
+        
+        <div id="modal_containerC" class="modal-containerC">
+          <div class="modalC">   
+            <div>
+              <img class="img_project" src="/img/proyecto_3.png" alt="">
+            </div>  
+            <div class="modal_container_hijo_2">
+              <button class="btn_x" id="projecto3_close"><i class="fa-solid fa-xmark"></i></button>
+              <h1 class="project_h1">Project "Rick and Morty"</h1>
+              <ul class="project_ul">
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Application built with React -Vitejs</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Use of useState and useEffect</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Dependence axios and react-dom</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>API rickandmortyapi use</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Hooks</li>
+              </ul>
+              <h2 class="project_h2">Used technology</h2>
+              <div>
+                <img class="img_react" src="/img/react.png" alt="react.png">
+                <img class="img_css" src="/img/icon-css.png" alt="css.png">
+                <img class="img_js" src="/img/icon-js.png" alt="js.png">
+              </div>
+              <h2 class="project_h2">Details</h2>
+              <div class="iconos_project">
+                <a href="https://github.com/AlexMunive/EntregableN3_Oficial" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+                <a href="https://chipper-stroopwafel-9cccf4.netlify.app/" target="_blank"><i
+                    class="fa-solid fa-circle-info"></i></a>
+              </div>              
+            </div>       
+          </div>
+        </div>
+                           <!-- ======= modal projecto 4 ======= -->
+        
+        <div id="modal_containerD" class="modal-containerD">
+          <div class="modalD">   
+            <div>
+              <img class="img_project" src="/img/proyecto_4.png" alt="">
+            </div>  
+            <div class="modal_container_hijo_2">
+              <button class="btn_x" id="projecto4_close"><i class="fa-solid fa-xmark"></i></button>
+              <h1 class="project_h1">Project "Users"</h1>
+              <ul class="project_ul">
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Application built with React -Vitejs</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Use of useState and useEffect</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Dependence axios, react-dom, react-hook-form</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Method https get, post, patch and delete</li>
+              </ul>
+              <h2 class="project_h2">Used technology</h2>
+              <div>
+                <img class="img_react" src="/img/react.png" alt="react.png">
+                <img class="img_css" src="/img/icon-css.png" alt="css.png">
+              </div>
+              <h2 class="project_h2">Details</h2>
+              <div class="iconos_project">
+                <a href="https://github.com/AlexMunive/EntregableN4_Oficial" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+                <a href="https://charming-florentine-28c008.netlify.app/" target="_blank"><i
+                    class="fa-solid fa-circle-info"></i></a>
+              </div>              
+            </div>       
+          </div>
+        </div>
+                           <!-- ======= modal projecto 5 ======= -->
+        
+        <div id="modal_containerE" class="modal-containerE">
+          <div class="modalE">   
+            <div>
+              <img class="img_project" src="/img/proyecto_5.png" alt="">
+            </div>  
+            <div class="modal_container_hijo_2">
+              <button class="btn_x" id="projecto5_close"><i class="fa-solid fa-xmark"></i></button>
+              <h1 class="project_h1">Project "Pkedex"</h1>
+              <ul class="project_ul">
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Application built with React -Vitejs</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Use of useState, useEffect, Routes, useSelector, useDispatch, useNavigate</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Dependence axios, react-dom, react-redux, react-router-dom</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>@reduxjs/toolkit</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Method https get</li>
+              </ul>
+              <h2 class="project_h2">Used technology</h2>
+              <div>
+                <img class="img_react" src="/img/react.png" alt="react.png">
+                <img class="img_css" src="/img/icon-css.png" alt="css.png">
+                <img class="img_js" src="/img/icon-js.png" alt="js.png">
+              </div>
+              <h2 class="project_h2">Details</h2>
+              <div class="iconos_project">
+                <a href="https://github.com/AlexMunive/entregable5_oficial" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+                <a href="https://visionary-narwhal-72a751.netlify.app/" target="_blank"><i
+                    class="fa-solid fa-circle-info"></i></a>
+              </div>              
+            </div>       
+          </div>
+        </div>
+                           <!-- ======= modal projecto 6 ======= -->
+        
+        <div id="modal_containerF" class="modal-containerF">
+          <div class="modalF">   
+            <div>
+              <img class="img_project" src="/img/proyecto_6.png" alt="">
+            </div>  
+            <div class="modal_container_hijo_2">
+              <button class="btn_x" id="projecto6_close"><i class="fa-solid fa-xmark"></i></button>
+              <h1 class="project_h1">Project "Pkedex"</h1>
+              <ul class="project_ul">
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Application built with React -Vitejs</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Use of useState, useEffect, Routes, useSelector, useDispatch, useNavigate</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Dependence axios, react-dom, react-redux, react-router-dom</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>@reduxjs/toolkit</li>
+                <li class="project_li"><i class="fa-solid fa-pen"></i>Method https get, post, delete, put</li>
+              </ul>
+              <h2 class="project_h2">Used technology</h2>
+              <div>
+                <img class="img_react" src="/img/react.png" alt="react.png">
+                <img class="img_css" src="/img/icon-css.png" alt="css.png">
+                <img class="img_js" src="/img/icon-js.png" alt="js.png">
+              </div>
+              <h2 class="project_h2">Details</h2>
+              <div class="iconos_project">
+                <a href="https://github.com/AlexMunive/Proyecto_Final_React" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+                <a href="https://cute-brioche-582631.netlify.app/" target="_blank"><i
+                    class="fa-solid fa-circle-info"></i></a>
+              </div>              
+            </div>       
+          </div>
+        </div>
+
+
+   
       
 
-      <div class="container-post">
-        <input type="radio" id="all" name="categories" value="all" checked>
-        <input type="radio" id="frontend" name="categories" value="frontend">
-        <input type="radio" id="backend" name="categories" value="backend">
-      </div>
-
-      <div class="container-category">
-            <label for="all">All</label>
-            <label for="frontend">Frontend</label>
-            <label for="backend">Backend</label>
-      </div>
-
-      <div class="post">
-        <div class="post" data-category="frontend""> 
-          <img class="project_img" src="/img/proyecto_1.png" alt="projecto_1.png">
-        </div>
-        <div class="post" data-category="frontend">
-          <img class="project_img" src="/img/proyecto_2.png" alt="projecto_2.png">
-        </div>
-        <div class="post" data-category="backend">
-          <img class="project_img" src="/img/proyecto_3.png" alt="projecto_3.png">
-        </div>
-        <div class="post" data-category="CSS">
-          <img class="project_img" src="/img/proyecto_4.png" alt="projecto_4.png">
-        </div>
-        <div class="post" data-category="CSS">
-          <img class="project_img" src="/img/proyecto_5.png" alt="projecto_5.png">
-        </div>
-        <div class="post" data-category="CSS">
-          <img class="project_img" src="/img/proyecto_6.png" alt="projecto_6.png">
-        </div>
-      </div>
     
 
     </section><!-- End portafolio Section -->
 
+
+    <!-- ======= contact Section ======= -->
+    <section id="contact" class="contact">
+            <div class="contact_container">
+    
+              <div>
+                <h2 class="contact_name">CONTACT ME</h2>
+              </div>
+    
+              <div class="contact_section_total">
+    
+                <div class="contacto_container_div">
+                  <div class="contact_menssage">
+                    <div class="contact_titulo">
+                      <h3 class="contact_titulo_h3">HAVE YOU ANY QESTIONS ?</h3>
+                      <h4 class="contact_titulo_h4">I'M AT YOU SERVICE</h4>
+                    </div>
+                  </div>
+    
+    
+                  <div class="contact_container_total">
+                    <section class="seccion">
+                      <div class="seccion__contenedor">
+                        <div class="seccion__contenido">
+                          <form id="form" class="form">
+                            <div class="form_first_last_name">
+                              <div class="form-group">
+                                <label class="contac_label" for="name">First Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your fisrt name">
+                              </div>
+                              <div class="form-group">
+                                <label class="contac_label" for="name">Last Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your last name">
+                              </div>
+                            </div>
+    
+                            <div class="form_first_last_name">
+                              <div class="form-group">
+                                <label class="contac_label" for="email">E-mail</label>
+                                <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                              </div>
+                              <div class="form-group">
+                                <label class="contac_label" for="email">Mobile</label>
+                                <input type="number" id="email" class="form-control" placeholder="Enter your mobile">
+                              </div>
+    
+                            </div>
+                            <div class="form-group">
+                              <label class="contac_label" for="message">Message</label>
+                              <textarea id="message" class="form-control_message" placeholder="Tell me your big idea"
+                                rows="10"></textarea>
+                            </div>
+                            <input type="submit" class="btn-form" value="Send" />
+                          </form>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+    
+                <div class="contact_info_total">
+                  <div class="contact_info">
+                    <h2 class="contact_info_h2">Contact Info</h2>
+                    <div>
+                      <h3 class="contact_info_h3"><i class="fa-solid fa-location-dot"></i>Micaela Bastida #1052 /
+                        Satipo-Junín-Perú</h3>
+                    </div>
+                    <div>
+                      <h3 class="contact_info_h3"><i class="fa-solid fa-envelope"></i>alexmunive.0213@gmail.com</h3>
+                    </div>
+                    <div>
+                      <h3 class="contact_info_h3"><i class="fa-solid fa-phone"></i>(+51) 936658544</h3>
+                    </div>
+                  </div>
+                  <div>
+                    <iframe class="google_map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d776.4535718082992!2d-74.64417002661905!3d-11.25546460513021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910bc1aa75ffb58d%3A0x1a057e0f9657fd7!2sAv.%20Micaela%20Bastidas%201052%2C%20Satipo%2012261%2C%20Per%C3%BA!5e0!3m2!1ses-419!2snl!4v1663219533089!5m2!1ses-419!2snl"
+                      width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+    </section><!-- End contact Section -->
 
 
   </main>
