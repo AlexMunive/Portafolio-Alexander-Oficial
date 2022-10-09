@@ -2860,6 +2860,43 @@ header p {
     }
 }
 @media screen and (max-width: 480px){
+    .contacto_container_div {
+        background-color: rgb(255, 255, 255);
+        max-width: 300px;
+        height: 620px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 15px;
+        box-shadow: 4px 4px 10px #0003;
+        margin-bottom: 30px;
+    }
+    .form-control_message {
+        width: 250px;
+        padding-top: 8px;
+        padding-left: 8px;
+        margin-top: 5px;
+        outline: none;
+        border: 1px solid rgb(172, 172, 172);
+        padding: auto;
+        word-wrap: break-word;
+        box-sizing: border-box
+    }
+    .contact_info {
+        width:300px;  
+        margin-left: 0;    
+    }
+    .contact_info_total {
+        align-items: center;
+    }
+    .google_map {
+        max-width: 300px;
+        height: 230px;
+        margin-left: 0px;
+        box-shadow: 4px 4px 10px #0003;
+    }
+}
+@media screen and (max-width: 480px){
     .contact_titulo_h3{
         font-size: 13px;
     }
@@ -2906,7 +2943,20 @@ header p {
     border: 1px solid rgb(172, 172, 172);
     word-wrap: break-word;
 }
-
+@media screen and (max-width: 480px){
+    .form-control {
+        padding-left: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 250px;
+        height: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        outline: none;
+        border: 1px solid rgb(172, 172, 172);
+        word-wrap: break-word;
+    }
+}
 .contac_label {
     margin-top: 10px;
 }
