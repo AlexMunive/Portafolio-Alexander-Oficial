@@ -1,3 +1,39 @@
+var check=document.querySelector('.check');
+check.addEventListener('click', idioma);
+
+
+function idioma(){
+  let id=check.checked;
+  if(id==true){
+    location.href="es/index.html";
+  }else{
+    location.href="../index.html";
+  }
+}
+
+//* dark mode
+function changeMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
+
+//*  modal configuración
+
+// const abrir = document.getElementById('abrir');
+// const modal_idiom = document.getElementById('modal_idiom');
+
+
+
+
+
+
+
+
+
+
+
+
 window.onscroll = function(){
 
     scroll = document.documentElement.scrollTop;
@@ -73,18 +109,6 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active_project";
   });
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

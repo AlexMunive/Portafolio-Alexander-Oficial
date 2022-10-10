@@ -71,23 +71,24 @@
 
 
 /* gear */
+
 .gear{
     width: 30px;
-    color: #0d3fca;
     margin-left: 40px;
     cursor: pointer;
     z-index: 2;
 }
+
 .idiom{
     position: absolute;
-    background-color:  #359EF9;;
+    background-color:    #359EF9;;
     width: 150px;
     height: 50px;
     transform: translateY(-10%);
     transform: translateY(0%);
     opacity: 0;
     transition: all 0.5s ease-in-out;
-    border: 1px solid #359EF9;;
+    border: 1px solid   #359EF9;;
     border-radius: 15px;
     right: 10px;
     box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.3);
@@ -106,87 +107,85 @@
     transform: translateY(10%);
 }
 
-
-
-
 /* dark mode */
 
 .dark_mode{
-   top: 100px;
-   position: absolute;
-   background-color:  #359EF9;;
-   width: 150px;
-   height: 50px;
-   margin-top: 12px;
-   transform: translateY(-10%);
-   transform: translateY(0%);
-   opacity: 0;
-   transition: all 0.5s ease-in-out;
-   border: 1px solid #359EF9;;
-   border-radius: 15px;
-   right: 10px;
-   box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.3);
-
-}
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 26px;
-    top: 13px;
-    left: 50px;
-  }
-  .switch input {
-    display: none;
-  }
-  .btn-slider {
+    top: 100px;
     position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #333;
-    border-radius: 34px;
-    transition: .4s;
-  }
-  .btn-slider:before {
-    content: "";
-    position: absolute;
-    height: 22px;
-    width: 22px;
-    background: #fff;
-    border-radius: 50%;
-    transition: .4s;
-    border: 2px solid #333;
-    
-  }
-  input:checked + .btn-slider {
-    background: rgb(20, 123, 192);
-  }
-  input:checked + .btn-slider:before {
-    transform: translateX(26px);
-  }
-
-  #gear_id:checked ~ .dark_mode{
-    opacity: 1;
-    transform: translateY(10%);
-}
-
-.fa-sun{
-    position: absolute;
-    right: 60px;
-    top: 3px;
-    font-size: 20px;
-    color: rgb(226, 241, 142);
-}
-.fa-moon{
-    position: absolute;
-    right: -35px;
-    top: 3px;
-    font-size: 20px;
-    color: rgb(26, 26, 26);
-}
+    background-color:  #359EF9;;
+    width: 150px;
+    height: 50px;
+    margin-top: 12px;
+    transform: translateY(-10%);
+    transform: translateY(0%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #359EF9;;
+    border-radius: 15px;
+    right: 10px;
+    box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.3);
+ 
+ }
+ .switch {
+     position: relative;
+     display: inline-block;
+     width: 50px;
+     height: 26px;
+     top: 13px;
+     left: 50px;
+   }
+   .switch input {
+     display: none;
+   }
+   .btn-slider {
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #333;
+     border-radius: 34px;
+     transition: .4s;
+   }
+   .btn-slider:before {
+     content: "";
+     position: absolute;
+     height: 22px;
+     width: 22px;
+     background: #fff;
+     border-radius: 50%;
+     transition: .4s;
+     border: 2px solid #333;
+     
+   }
+   input:checked + .btn-slider {
+     background: rgb(20, 123, 192);
+   }
+   input:checked + .btn-slider:before {
+     transform: translateX(26px);
+   }
+ 
+   #gear_id:checked ~ .dark_mode{
+     opacity: 1;
+     transform: translateY(10%);
+ }
+ 
+ .fa-sun{
+     position: absolute;
+     right: 60px;
+     top: 3px;
+     font-size: 20px;
+     color: rgb(226, 241, 142);
+ }
+ .fa-moon{
+     position: absolute;
+     right: -35px;
+     top: 3px;
+     font-size: 20px;
+     color: rgb(26, 26, 26);
+ }
+ 
 
 
 
@@ -223,7 +222,7 @@
     display: inline-block;
   }
   .loader::before {    
-    content: 'Loading';
+    content: 'Cargando';
     color: #359EF9;
     font-family: 'Poppins', sans-serif;
     font-size: 48px;
@@ -295,6 +294,7 @@ header {
     top: 0;
     right: 0;
     z-index: 2;
+    /* transition: all 300ms; */
     margin-right: 0;
 }
 
@@ -406,7 +406,7 @@ header p {
 }
 .dark-mode .img_alex{
     background:rgb(9, 38, 117);
-} 
+}
 
 .btn-abrir {
     display: none;
@@ -425,7 +425,7 @@ header p {
     padding: 0 20px;
     align-items: center;
     justify-content: space-between;
-    /* margin-right: 20px; */
+    margin-right: 20px;
 
 }
 .home-style{
@@ -443,16 +443,12 @@ header p {
 .dark-mode .nav_mod{
     background: rgb(97, 97, 97);
 }
-
 .nav_mod a {
     color: #373737;
 }
-
 .dark-mode .nav_mod a{
     color: #ffffff;
 }
-
-
 .nav_mod .home-style{
     background: none;
 }
@@ -508,22 +504,18 @@ header p {
     transform: scale(1.05);
     transition: filter 100ms ease, transform 200ms ease;
 }
-
-
 .dark-mode .hero__nav-link:hover,
 .hero__nav-link.active {
     background: #0d3fca;
 }
 
-
-@media (max-width: 960px) {
+@media (max-width: 1098px) {
     .hero__nav-inner {
         position: fixed;
         top: 0;
         left: -100%;
         width: 100vw;
         height: 100%;
-        /* padding: 20px 0; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -666,7 +658,7 @@ header p {
 
 .container__info_h1 {
     position: relative;
-    max-width: 500px;
+    max-width: 550px;
     font-size: 60px;
     font-weight: 900;
     color: #fff;
@@ -725,6 +717,9 @@ header p {
     font-weight: 700;
 
 }
+.dark-mode .strong_div3:before{
+    background-color: #000000;
+}
 .strong_div3:before{
     content: "";
     position: absolute;
@@ -735,9 +730,6 @@ header p {
     background-color: #2196f3;
     border-left: 2px solid #0d3fca;
     animation: animate 4s steps(12) infinite;
-}
-.dark-mode .strong_div3:before{
-    background-color: #000000;
 }
 @keyframes animate{
     40%, 60%{
@@ -894,8 +886,6 @@ header p {
 .dark-mode .imagen1{
     background-color: #0f359c;
 }
-
-
 @media screen and (max-width: 480px){
     .imagen1 {
         width: 230px;
@@ -925,6 +915,7 @@ header p {
     }
 }
 
+
 .about_information {
     background-color: #2196f3;
     width: 270px;
@@ -939,8 +930,6 @@ header p {
 .dark-mode .about_information{
     background-color: #0f359c;
 }
-
-
 @media screen and (max-width: 480px){
     .about_information {
         background-color: #2196f3;
@@ -1082,8 +1071,6 @@ header p {
 .dark-mode .resume_date{
     color: rgb(191, 210, 240);
 }
-
-
 @media screen and (max-width: 480px){
     .resume_date {
         font-size: 20px;
@@ -1111,7 +1098,6 @@ header p {
 .dark-mode .resume_year{
     background: #294daf;
 }
-
 .resuem_date_education {
     color: rgb(0, 0, 0);
     font-size: 20px;
@@ -1119,7 +1105,6 @@ header p {
 .dark-mode .resuem_date_education{
     color: rgb(191, 210, 240);
 }
-
 .resumen_data_p {
     color: rgb(0, 0, 0);
     font-size: 18px;
@@ -1130,7 +1115,6 @@ header p {
 .dark-mode .resumen_data_p {
     color: rgb(216, 230, 250);
 }
-
 .resumen_data_2 {
     color: rgb(49, 49, 49);
     font-size: 16px;
@@ -1151,9 +1135,8 @@ header p {
 
 }
 .dark-mode .resume_container {
-background-color: rgb(13, 63, 202);
-}
-
+    background-color: rgb(13, 63, 202);
+    }
 .resume_container_hijo {
     display: flex;
     flex-direction: row;
@@ -1254,6 +1237,7 @@ background-color: rgb(13, 63, 202);
 .dark-mode .fa-graduation-cap{
     color: rgb(217, 231, 252);
 }
+
 
 
 .resumen_education {
@@ -1833,9 +1817,6 @@ background-color: rgb(13, 63, 202);
 .dark-mode .services_container{
     background-color: rgb(13, 63, 202);
 }
-
-
-
 .services_container_div {
     display: flex;
     flex-direction: row;
@@ -2028,7 +2009,7 @@ background-color: rgb(13, 63, 202);
     align-items: center;
     align-items: center;
     justify-content: center;
-    background-color: #d9eeff;;
+    background-color: #d9eeff;
     box-shadow: 4px 4px 10px #0003;
     margin-top: 50px;
     border-radius: 15px;
@@ -2119,7 +2100,7 @@ background-color: rgb(13, 63, 202);
     
 }
 .figure_project1::after{
-    content: "PHRASE";
+    content: "FRASE";
     text-align: center;
     font-size: 35px;
     color: white;
@@ -2170,7 +2151,7 @@ background-color: rgb(13, 63, 202);
     transform: translateY(0);
 }
 .figure_project2::after{
-    content: "CLIMATE";
+    content: "CLIMA";
     text-align: center;
     font-size: 35px;
     color: white;
@@ -2272,7 +2253,7 @@ background-color: rgb(13, 63, 202);
     transform: translateY(0);
 }
 .figure_project4::after{
-    content: "USERS";
+    content: "USUARIOS";
     text-align: center;
     font-size: 35px;
     color: white;
@@ -2373,7 +2354,7 @@ background-color: rgb(13, 63, 202);
     transform: translateY(0);
 }
 .figure_project6::after{
-    content: "E-COMMERCE";
+    content: "COMERCIO ELECTRONICO";
     text-align: center;
     font-size: 35px;
     color: white;
@@ -3091,7 +3072,6 @@ background-color: rgb(13, 63, 202);
     justify-content: center;
     align-items: center;
     align-content: center;
-    
 }
 
 .contact_container {
@@ -3117,7 +3097,6 @@ background-color: rgb(13, 63, 202);
 .dark-mode .contac_label{
     color: rgb(172, 195, 230);
 }
-
 .contacto_container_div {
     background-color: rgb(255, 255, 255);
     width: 670px;
@@ -3132,7 +3111,6 @@ background-color: rgb(13, 63, 202);
 .dark-mode .contacto_container_div{
     background-color: #0f359c;
 }
-
 @media screen and (max-width: 720px){
     .contacto_container_div {
         background-color: rgb(255, 255, 255);
@@ -3325,6 +3303,7 @@ background-color: rgb(13, 63, 202);
 .btn-form {
     color: white;
     background-color: #359EF9;
+    /* font-size: 15px; */
     border: none;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -3337,6 +3316,7 @@ background-color: rgb(13, 63, 202);
 .dark-mode .btn-form{
     background-color: #314fa3;
 }
+
 .contact_menssage {
     text-align: center;
     font-size: 15px;
@@ -3360,7 +3340,6 @@ background-color: rgb(13, 63, 202);
 .dark-mode .contact_info{
     background-color: rgb(15, 53, 156);
 }
-
 .contact_info_h2 {
     color: white;
     font-size: 1.17em;
@@ -3433,7 +3412,6 @@ background-color: rgb(13, 63, 202);
 .dark-mode .contact_section_total{
     background-color: rgb(13, 63, 202);
 }
-
 
 /*======= footer Section ======= */
 .footer{
@@ -3735,7 +3713,6 @@ span.cuatro {
     background-color: #5fb95f;
     bottom: -20px;
 }
-
 .dark-mode span.uno{
     background-color:#4f62b8;
 }
@@ -3748,7 +3725,8 @@ span.cuatro {
 .dark-mode span.cuatro{
     background-color: #4f62b8;
 }
-
+@media screen and (max-width: 390px){
+}
 @keyframes vuela {
     from {
         transform: rotate(0deg);
