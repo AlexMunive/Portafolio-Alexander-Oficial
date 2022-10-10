@@ -18,21 +18,7 @@ function changeMode() {
 }
 
 
-//*  modal configuración
-
-// const abrir = document.getElementById('abrir');
-// const modal_idiom = document.getElementById('modal_idiom');
-
-
-
-
-
-
-
-
-
-
-
+//* header
 
 window.onscroll = function(){
 
