@@ -148,6 +148,8 @@ window.addEventListener('scroll', function (e) {
 
 //* ventana modal
 
+//* PROJECTO 1 FRONTEND
+
 const projecto1_open = document.getElementById('projecto1_open');
 const modal_container_projecto1 = document.getElementById('modal_container');
 const projecto1_close = document.getElementById('projecto1_close');
@@ -161,7 +163,7 @@ projecto1_close.addEventListener('click', () => {
 });
 
 
-
+//* PROJECTO 2 FRONTEND
 
 const projecto2_open = document.getElementById('projecto2_open');
 const modal_container_projecto2 = document.getElementById('modal_containerB');
@@ -176,7 +178,7 @@ projecto2_close.addEventListener('click', () => {
 });
 
 
-
+//* PROJECTO 3 FRONTEND
 
 const projecto3_open = document.getElementById('projecto3_open');
 const modal_container_projecto3 = document.getElementById('modal_containerC');
@@ -191,7 +193,7 @@ projecto3_close.addEventListener('click', () => {
 });
 
 
-
+//* PROJECTO 4 FRONTEND
 
 const projecto4_open = document.getElementById('projecto4_open');
 const modal_container_projecto4 = document.getElementById('modal_containerD');
@@ -206,7 +208,7 @@ projecto4_close.addEventListener('click', () => {
 });
 
 
-
+//* PROJECTO 5 FRONTEND
 
 
 const projecto5_open = document.getElementById('projecto5_open');
@@ -222,7 +224,7 @@ projecto5_close.addEventListener('click', () => {
 });
 
 
-
+//* PROJECTO 6 FRONTEND
 
 const projecto6_open = document.getElementById('projecto6_open');
 const modal_container_projecto6 = document.getElementById('modal_containerF');
@@ -234,4 +236,19 @@ projecto6_open.addEventListener('click', () => {
 
 projecto6_close.addEventListener('click', () => {
   modal_container_projecto6.classList.remove('showA');
+});
+
+
+//* PROJECTO 1 BACKEND
+
+const projecto1_B_open = document.getElementById('projecto1_B_open');
+const modal_container_B1 = document.getElementById('modal_container_B1');
+const projecto1_B_close = document.getElementById('projecto1_B_close');
+
+projecto1_B_open.addEventListener('click', () => {
+  modal_container_B1.classList.add('showA');  
+});
+
+projecto1_B_close.addEventListener('click', () => {
+  modal_container_B1.classList.remove('showA');
 });

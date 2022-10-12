@@ -3436,7 +3436,6 @@ header p {
 @media screen and (max-width: 800px){
     .footer_h1{
         font-size: 15px;
-        margin-top: 5px;
     }
 }
 @media screen and (max-width: 500px){
