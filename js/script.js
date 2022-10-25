@@ -252,3 +252,18 @@ projecto1_B_open.addEventListener('click', () => {
 projecto1_B_close.addEventListener('click', () => {
   modal_container_B1.classList.remove('showA');
 });
+
+
+//* PROJECTO 2 BACKEND
+
+const projecto2_B_open = document.getElementById('projecto2_B_open');
+const modal_container_B2 = document.getElementById('modal_container_B2');
+const projecto2_B_close = document.getElementById('projecto2_B_close');
+
+projecto2_B_open.addEventListener('click', () => {
+  modal_container_B2.classList.add('showA');  
+});
+
+projecto2_B_close.addEventListener('click', () => {
+  modal_container_B2.classList.remove('showA');
+});
