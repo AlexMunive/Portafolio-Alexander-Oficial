@@ -267,7 +267,8 @@ projecto2_B_open.addEventListener('click', () => {
 projecto2_B_close.addEventListener('click', () => {
   modal_container_B2.classList.remove('showA');
 });
-//* PROJECTO 2 BACKEND
+
+//* PROJECTO 3 BACKEND
 
 const projecto3_B_open = document.getElementById('projecto3_B_open');
 const modal_container_B3 = document.getElementById('modal_container_B3');
