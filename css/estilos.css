@@ -3766,6 +3766,7 @@ background-color: rgb(13, 63, 202);
     padding: 8px;
     margin-left: 30px;
     margin-right: 20px;
+    text-align: center;
 }
 
 .dark-mode .fa-location-dot, .dark-mode  .fa-envelope, .dark-mode  .fa-phone{

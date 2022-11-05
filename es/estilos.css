@@ -2225,6 +2225,58 @@ header p {
         font-size: 25px;
     }
 }
+/* projecto N3 - BACKEND */
+
+.figure_project3_B{
+    background-image: url("/img/backend_3.png");
+    width: 360px;
+     height: 220px;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     overflow: hidden;
+     transition: filter 100ms ease, transform 200ms ease;
+     box-shadow: 4px 4px 10px #0003;
+     cursor: zoom-in;
+    
+}
+@media screen and (max-width: 480px){
+    .figure_project3_B{
+        width: 260px;
+        height: 120px;
+    }
+}
+.figure_project3_B:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 2px 10px #0003;
+    transition: box-shadow 200ms ease, transform 200ms ease;
+}
+.figure_project3_B:hover::after{
+    transform: translateY(0);
+    
+}
+.figure_project3_B::after{
+    content: "DB_POSTS";
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    background: rgba(32, 84, 180, 0.7);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+
+}
+@media screen and (max-width: 480px){
+    .figure_project3_B::after{
+        font-size: 25px;
+    }
+}
 /* projecto N2 */
 
 .figure_project2{
@@ -2690,7 +2742,23 @@ header p {
     z-index: 3;
     backdrop-filter: blur(5px);
   }
-  
+  .modal-container_B3 {
+    display: flex;
+    /* background-color: #2196f3; */
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+    backdrop-filter: blur(5px);
+  }
   .filterDiv {
     float: left;
     background-color: #2196F3;
@@ -3254,6 +3322,39 @@ header p {
       }
   }
 
+  .modal_B3 {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    max-width: 900px;
+    max-width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 4px 4px 10px #0003;
+
+  }
+  @media screen and (max-width: 740px){
+    .modal_B3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .modal_B3{
+        width: 300px;
+        
+      }
+  }
+  @media screen and (max-width: 380px) {
+    .modal_B3{
+        width: 200px;
+
+      }
+  }
+
 /* Style the buttons */
 .btn_project{
     border: 1px solid  rgb(42, 96, 196);
@@ -3633,10 +3734,9 @@ header p {
     padding: 8px;
     margin-left: 30px;
     margin-right: 20px;
+    text-align: center;
 }
-.dark-mode .fa-location-dot,
-.fa-envelope,
-.fa-phone{
+.dark-mode .fa-location-dot, .dark-mode  .fa-envelope, .dark-mode  .fa-phone{
     background-color: rgb(49, 79, 163);
 }
 .contact_info_total {
