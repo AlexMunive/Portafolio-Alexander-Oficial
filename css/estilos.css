@@ -173,19 +173,21 @@
     transform: translateY(10%);
 }
 
-.fa-sun{
+.logo_dia{
     position: absolute;
-    right: 60px;
-    top: 3px;
-    font-size: 20px;
-    color: rgb(226, 241, 142);
+    width: 40px;
+    right: 100px;
+    margin-top: 10px;
+    
+
 }
-.fa-moon{
+.logo_luna{
     position: absolute;
-    right: -35px;
-    top: 3px;
-    font-size: 20px;
-    color: rgb(26, 26, 26);
+    width: 38px;
+    left: 105px;
+    margin-top: 5px;
+
+   
 }
 
 
@@ -756,39 +758,81 @@ header p {
 /*------ Iconos --------*/
 
 .fila {
-    display: table;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
     width: 100%;
 }
 
-.casilla {
-    display: table-cell;
+.logo_instagram_a{
+    width: 60px;
+    color: white;
+    opacity: 0.80;
+    transform: translate(0, 0);
+    transition: 0.6s cubic-bezier(0, 0.6, 0.35, 1.12) transform, 0.2 ease opacity;
     position: relative;
-    width: 10%;
-    text-align: center;
-    cursor: pointer;
-
 }
-
-.casilla i {
-    font-size: 40px;
+.logo_wsp_a{
+    width: 60px;
+    color: white;
+    opacity: 0.80;
+    transform: translate(0, 0);
+    transition: 0.6s cubic-bezier(0, 0.6, 0.35, 1.12) transform, 0.2 ease opacity;
+}
+.logo_linkedin_a{
+    width: 60px;
+    color: white;
+    opacity: 0.80;
+    transform: translate(0, 0);
+    transition: 0.6s cubic-bezier(0, 0.6, 0.35, 1.12) transform, 0.2 ease opacity;
+}
+.logo_github_a{
+    width: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
     color: white;
     opacity: 0.80;
     transform: translate(0, 0);
     transition: 0.6s cubic-bezier(0, 0.6, 0.35, 1.12) transform, 0.2 ease opacity;
 }
 
-.iconos {
-    
-    width: 300px;
-    height: 65px;
-    padding: 20px;
+
+.iconos {    
+    width: 280px;
+    height: 60px;
+    padding: 5px;
     margin-top: 20px;
     background-color: #0d3fca;
     border-radius: 15px;
 }
 @media screen and (max-width: 420px){
-    .casilla i {
-        font-size: 30px;
+    .logo_instagram_a{
+        width: 50px;
+        color: white;
+        opacity: 0.80;
+        transform: translate(0, 0);
+        transition: 0.6s cubic-bezier(0, 0.6, 0.35, 1.12) transform, 0.2 ease opacity;
+    }
+    .logo_wsp_a{
+        width: 50px;
+        color: white;
+        opacity: 0.80;
+        transform: translate(0, 0);
+        transition: 0.6s cubic-bezier(0, 0.6, 0.35, 1.12) transform, 0.2 ease opacity;
+    }
+    .logo_linkedin_a{
+        width: 50px;
+        color: white;
+        opacity: 0.80;
+        transform: translate(0, 0);
+        transition: 0.6s cubic-bezier(0, 0.6, 0.35, 1.12) transform, 0.2 ease opacity;
+    }
+    .logo_github_a{
+        width: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
         color: white;
         opacity: 0.80;
         transform: translate(0, 0);
@@ -798,7 +842,7 @@ header p {
     
         width: 220px;
         height: 55px;
-        padding: 20px;
+        padding: 5px;
         margin-top: 20px;
         background-color: #0d3fca;
         border-radius: 15px;
@@ -806,10 +850,23 @@ header p {
 }
 
 
-.iconos .casilla:hover i {
+.iconos .casilla:hover .logo_instagram_a {
     opacity: 1;
     transform: translate(0, -6px);
 }
+.iconos .casilla:hover .logo_wsp_a {
+    opacity: 1;
+    transform: translate(0, -6px);
+}
+.iconos .casilla:hover .logo_linkedin_a {
+    opacity: 1;
+    transform: translate(0, -6px);
+}
+.iconos .casilla:hover .logo_github_a {
+    opacity: 1;
+    transform: translate(0, -6px);
+}
+
 /*======= main ======= */
 .main{
     display: flex;
@@ -3743,35 +3800,27 @@ background-color: rgb(13, 63, 202);
 
 }
 
+.direccion_logo{
+    width: 40px;
+    margin-right: 8px;
+   margin-left: 10px;
+}
+.correo_logo{
+    width: 55px;
+    margin-left: 5px;
 
+}
+.cel_logo{
+    width: 30px;
+    margin-left: 18px;
+    margin-right: 10px;
+}
 @media screen and (max-width: 480px){
     .contact_info_h3 {
         font-size: 12px;
     }
-    .fa-location-dot,
-    .fa-envelope,
-    .fa-phone {
-    font-size: 10px; 
-    max-width: 25px;
-
-}
 }
 
-.fa-location-dot, .fa-envelope, .fa-phone {
-    display: flex;
-    justify-content: center;
-    width: 30px;
-    border-radius: 20px;
-    background-color: #359EF9;
-    padding: 8px;
-    margin-left: 30px;
-    margin-right: 20px;
-    text-align: center;
-}
-
-.dark-mode .fa-location-dot, .dark-mode  .fa-envelope, .dark-mode  .fa-phone{
-    background-color: rgb(49, 79, 163);
-}
 .contact_info_total {
     display: flex;
     flex-direction: column;
@@ -3826,207 +3875,121 @@ background-color: rgb(13, 63, 202);
         margin-bottom: 5px;
     }
 }
-.fa-facebook-f{
-    font-size: 25px;
-    color:  #0d3fca;
-    background: #2196f3;
-    border: 2px solid   #0d3fca;
-    border-radius: 50%;
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    transition: transform 200ms ease;
-    cursor: pointer;
-    text-align: center;
+
+.instagram_logo_b{
+ width: 50px;
+ background-color: #0d3fca;
+ border-radius: 50%;
+ transition: transform 200ms ease;
+ cursor: pointer;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ align-content: center;
+ justify-content: center;
+ text-align: center;
 }
-.dark-mode .fa-facebook-f{
-    background-color: #000000;
-}
-@media screen and (max-width: 800px){
-    .fa-facebook-f{
-        font-size: 18px;
-        border: 1px solid   #0d3fca;
-        width: 30px;
-        height: 30px;
-    }
-}
-@media screen and (max-width: 500px){
-    .fa-facebook-f{
-        font-size: 13px;
-        border: 1px solid   #0d3fca;
-        width: 25px;
-        height: 25px;
-    }
-}
-.fa-facebook-f:hover{
+.instagram_logo_b:hover{
     transform: scale(1.05);
     transition: transform 200ms ease;
 }
-.fa-instagram{
-    font-size: 25px;
-    color:#0d3fca;
-    background: #2196f3;
-    border: 2px solid #0d3fca;
-    border-radius: 50%;
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    transition: transform 200ms ease;
-    cursor: pointer;
-    text-align: center;
-}
-.dark-mode .fa-instagram{
-    background-color: #000000;
-}
+
 @media screen and (max-width: 800px){
-    .fa-instagram{
-        font-size: 18px;
-        border: 1px solid   #0d3fca;
+    .instagram_logo_b{
         width: 30px;
-        height: 30px;
     }
 }
 @media screen and (max-width: 500px){
-    .fa-instagram{
-        font-size: 13px;
-        border: 1px solid   #0d3fca;
+    .instagram_logo_b{
         width: 25px;
-        height: 25px;
     }
 }
-.fa-instagram:hover{
+.linkedin_logo_b{
+ width: 50px;
+ background-color: #0d3fca;
+ border-radius: 50%;
+ transition: transform 200ms ease;
+ cursor: pointer;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ align-content: center;
+ justify-content: center;
+ text-align: center;
+}
+.linkedin_logo_b:hover{
     transform: scale(1.05);
     transition: transform 200ms ease;
 }
-.fa-linkedin-in{
-    font-size: 25px;
-    color: #0d3fca;
-    background: #2196f3;
-    border: 2px solid  #0d3fca;
-    border-radius: 50%;
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    transition: transform 200ms ease;
-    cursor: pointer;
-    text-align: center;
-}
-.dark-mode .fa-linkedin-in{
-    background-color: #000000;
-}
+
 @media screen and (max-width: 800px){
-    .fa-linkedin-in{
-        font-size: 18px;
-        border: 1px solid   #0d3fca;
+    .linkedin_logo_b{
         width: 30px;
-        height: 30px;
     }
 }
 @media screen and (max-width: 500px){
-    .fa-linkedin-in{
-        font-size: 13px;
-        border: 1px solid   #0d3fca;
+    .linkedin_logo_b{
         width: 25px;
-        height: 25px;
     }
 }
-.fa-linkedin-in:hover{
+.wsp_logo_b{
+ width: 50px;
+ background-color: #0d3fca;
+ border-radius: 50%;
+ transition: transform 200ms ease;
+ cursor: pointer;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ align-content: center;
+ justify-content: center;
+ text-align: center;
+}
+.wsp_logo_b:hover{
     transform: scale(1.05);
     transition: transform 200ms ease;
 }
-.fa-whatsapp{
-    font-size: 25px;
-    color: #0d3fca;
-    background: #2196f3;
-    border: 2px solid  #0d3fca;
-    border-radius: 50%;
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    transition: transform 200ms ease;
-    cursor: pointer;
-    text-align: center;
-}
-.dark-mode .fa-whatsapp{
-    background-color: #000000;
-}
+
 @media screen and (max-width: 800px){
-    .fa-whatsapp{
-        font-size: 18px;
-        border: 1px solid   #0d3fca;
+    .wsp_logo_b{
         width: 30px;
-        height: 30px;
     }
 }
 @media screen and (max-width: 500px){
-    .fa-whatsapp{
-        font-size: 13px;
-        border: 1px solid   #0d3fca;
+    .wsp_logo_b{
         width: 25px;
-        height: 25px;
     }
 }
-.fa-whatsapp:hover{
+.github_logo_b{
+ width: 50px;
+ background-color: #0d3fca;
+ border-radius: 50%;
+ transition: transform 200ms ease;
+ cursor: pointer;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ align-content: center;
+ justify-content: center;
+ text-align: center;
+}
+.github_logo_b:hover{
     transform: scale(1.05);
     transition: transform 200ms ease;
 }
-.fa-github2{
-    font-size: 25px;
-    color: #0d3fca;
-    background: #2196f3;
-    border: 2px solid  #0d3fca;
-    border-radius: 50%;
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    transition: transform 200ms ease;
-    cursor: pointer;
-    margin: 0;
-    text-align: center;
-}
-.dark-mode .fa-github2{
-    background-color: #000000;
-}
+
 @media screen and (max-width: 800px){
-    .fa-github2{
-        font-size: 18px;
-        border: 1px solid   #0d3fca;
+    .github_logo_b{
         width: 30px;
-        height: 30px;
     }
 }
 @media screen and (max-width: 500px){
-    .fa-github2{
-        font-size: 13px;
-        border: 1px solid   #0d3fca;
+    .github_logo_b{
         width: 25px;
-        height: 25px;
     }
 }
-.fa-github2:hover{
-    transform: scale(1.05);
-    transition: transform 200ms ease;
-}
+
+
 .footer_div{
     display: flex;
     flex-direction: row;
