@@ -279,7 +279,7 @@
   }
   
 .container_all {
-    height: auto;
+    height: 100vh;
     position: relative;
     right: 0;
     transition: all 300ms;
@@ -394,7 +394,7 @@ header p {
 }
 
 
-.img_alex {
+/* .img_alex {
     height: auto;
     background-size: cover;
     border-radius: 50%;
@@ -405,7 +405,7 @@ header p {
     width: 350px;
     position: relative;
     z-index: 1;
-}
+} */
 .dark-mode .img_alex{
     background:rgb(9, 38, 117);
 } 
@@ -575,6 +575,7 @@ header p {
 
 .cover {
     width: 100%;
+    height: 100%;
     padding-bottom: 120px;
     font-family: 'Poppins', sans-serif;
     padding-top: 100px;
@@ -618,7 +619,7 @@ header p {
     margin: auto;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     position: relative;
     background-size: cover;
@@ -654,7 +655,7 @@ header p {
 
 
 .cover .container__info {
-    max-width: 600px;
+    max-width: 800px;
     margin-top: 40px;
     z-index: 1;
     word-wrap: break-word;
@@ -668,7 +669,7 @@ header p {
 
 .container__info_h1 {
     position: relative;
-    max-width: 500px;
+    max-width: 580px;
     font-size: 60px;
     font-weight: 900;
     color: #fff;
@@ -2246,7 +2247,7 @@ background-color: rgb(13, 63, 202);
 /* projecto N1 - BACKEND */
 
 .figure_project1_B{
-    background-image: url("/img/backend_1.png");
+    background-image: url("/img/swagger\ -\ products.png");
     width: 360px;
      height: 220px;
      background-size: cover;
